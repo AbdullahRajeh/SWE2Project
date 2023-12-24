@@ -61,8 +61,7 @@ void _nextPage() {
       duration: Duration(milliseconds: 500),
       curve: Curves.ease,
     );
-  } else {
-    // Navigate to the login page when on the last page
+    } else {
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => LoginPage()),
@@ -154,7 +153,7 @@ void _nextPage() {
       indicators.add(
         AnimatedContainer(
           duration: Duration(milliseconds: 500),
-          width: _currentPage == i ? 20.0 : 10.0, // Make the current dot wider
+          width: _currentPage == i ? 20.0 : 10.0, 
           height: 10.0,
           margin: EdgeInsets.symmetric(horizontal: 5.0),
           decoration: BoxDecoration(
@@ -195,8 +194,8 @@ class IntroductionContent extends StatelessWidget {
         children: [
           AnimatedContainer(
             duration: Duration(milliseconds: 350),
-            width: isCurrentPage ? 130.0 : 100.0, // Make the current dot wider
-            height: isCurrentPage ? 130.0 : 100.0, // Make the current dot wider
+            width: isCurrentPage ? 130.0 : 100.0,
+            height: isCurrentPage ? 130.0 : 100.0,
             decoration: BoxDecoration(
               shape: BoxShape.circle,
               color: isCurrentPage ? Colors.blue : Colors.transparent,
@@ -210,7 +209,7 @@ class IntroductionContent extends StatelessWidget {
           SizedBox(height: 20.0),
           SlideTransition(
             position: Tween<Offset>(
-              begin: Offset(0.0, slidePercent), // Slide up from bottom
+              begin: Offset(0.0, slidePercent),
               end: Offset.zero,
             ).animate(animationController!),
             child: Text(
@@ -224,7 +223,7 @@ class IntroductionContent extends StatelessWidget {
           SizedBox(height: 10.0),
           SlideTransition(
             position: Tween<Offset>(
-              begin: Offset(0.0, 1.0), // Slide up from bottom
+              begin: Offset(0.0, 1.0),
               end: Offset(1.0, -4.0),
             ).animate(animationController!),
             child: Text(
@@ -237,3 +236,4 @@ class IntroductionContent extends StatelessWidget {
     );
   }
 }
+//g

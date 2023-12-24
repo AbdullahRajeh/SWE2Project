@@ -8,7 +8,7 @@ class ArticlePage extends StatefulWidget {
   @override
   _ArticlePageState createState() => _ArticlePageState();
 }
-
+// //
 class _ArticlePageState extends State<ArticlePage> {
   List<Article> articles = [];
   bool isLoading = true;
@@ -20,7 +20,7 @@ class _ArticlePageState extends State<ArticlePage> {
   }
 
   Future<void> fetchArticles() async {
-    final apiKey = '09f092a1dc6442289f52a39d8187f8d5'; // Replace with your News API key
+    final apiKey = '09f092a1dc6442289f52a39d8187f8d5';
     try {
       final response = await http.get(Uri.parse(
           'https://newsapi.org/v2/top-headlines?country=us&category=technology&apiKey=$apiKey'));
@@ -36,11 +36,9 @@ class _ArticlePageState extends State<ArticlePage> {
           isLoading = false;
         });
       } else {
-        // Handle the case where the API request fails
         throw Exception('Failed to load articles: ${response.statusCode}');
       }
     } catch (e) {
-      // Handle errors
       print('Error fetching articles: $e');
       setState(() {
         isLoading = false;

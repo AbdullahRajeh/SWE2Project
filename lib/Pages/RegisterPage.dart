@@ -437,10 +437,9 @@ class _RegisterPageState extends State<RegisterPage> {
       child: MaterialButton(
         highlightColor: Colors.blue,
         splashColor: Colors.transparent,
-        enableFeedback: !isTeacher, // Enable only if it's not already selected
+                        enableFeedback: !isTeacher,
         onPressed: () {
-          setState(() {
-            // Select teacher
+                          setState(() {
             isTeacher = true;
           });
         },
@@ -476,7 +475,7 @@ class _RegisterPageState extends State<RegisterPage> {
       child: MaterialButton(
         highlightColor: Colors.blue,
         splashColor: Colors.transparent,
-        enableFeedback: isTeacher, // Enable only if it's not already selected
+                        enableFeedback: isTeacher, 
         onPressed: () {
           setState(() {
             isTeacher = false;

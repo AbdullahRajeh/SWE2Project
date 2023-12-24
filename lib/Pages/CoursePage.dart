@@ -38,7 +38,6 @@ class _CoursePageState extends State<CoursePage> {
   @override
   void initState() {
     super.initState();
-    // Replace 'YOUR_API_KEY' with your actual YouTube API key
     ytApiVid = YoutubeAPI('AIzaSyDAJolBZlT2a1Tt_5nnDAvqEoI0VxL6Vj4',
         maxResults: 10, type: 'video');
 
@@ -267,7 +266,7 @@ Container ContentCreatorRow(String name, List<YouTubeVideo> youtubeVideos) {
                                 child: Center(
                                   child: CircularProgressIndicator(
                                     color: Colors.white,
-                                    strokeWidth: 2.0, // Set your desired strokeWidth
+                                      strokeWidth: 2.0,
                                   ),
                                 ),
                               ),
@@ -581,7 +580,6 @@ Container ContentCreatorRow(String name, List<YouTubeVideo> youtubeVideos) {
                     ),
                     child: MaterialButton(
                       onPressed: () {
-                        // here it will take the user to the youtube channel
                       },
                       child: Text(
                         'View More',

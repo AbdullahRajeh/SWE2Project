@@ -256,8 +256,6 @@ class _ProfileState extends State<Profile> {
 
                           SizedBox(height: MediaQuery.of(context).size.height * 0.02),
 
-                          // first and last name 
-
                           Text(
                             "First Name",
                             style: TextStyle(

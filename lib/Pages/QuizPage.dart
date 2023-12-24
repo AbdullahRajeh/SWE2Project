@@ -24,7 +24,7 @@ class _QuizPageState extends State<QuizPage> {
   }
 
   Future<void> fetchQuizzes() async {
-    final int numberOfQuestions = 10; // Initial number of questions
+    final int numberOfQuestions = 10; 
     final int batchSize = 5;
 
     try {
@@ -67,8 +67,7 @@ class _QuizPageState extends State<QuizPage> {
             setState(() {
               if (isCorrect) {
                 streak++;
-              } else {
-                // If the answer is incorrect, reset the streak
+                    } else {
                 streak = 0;
               }
               currentQuestionIndex++;
@@ -242,7 +241,6 @@ class _QuizContentPageState extends State<QuizContentPage>
                       widget.onNextQuestion(true);
                       choicesDisabled = false;
                     } else {
-                      // Display a "Retry" button if the answer is incorrect
                       selectedOption = null;
                       choicesDisabled = false;
                       widget.streak = 0;
