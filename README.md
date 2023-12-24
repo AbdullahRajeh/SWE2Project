@@ -1,4 +1,8 @@
 # flutter_application_2
 
-A new Flutter project.
+An Educational Application 
+
+
+=====Develops=====
+Abdullah Rajeh Alshehri
 # SWE2Project
