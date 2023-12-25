@@ -1,12 +1,12 @@
-# flutter_application_2
+# SWE2Project
 
-An Educational Application 
+An Educational Application
 
 
 =====Develops=====
-##Abdullah Rajeh Alshehri
-##Ziyad Abdulaziz Almoneef
-##Salman Ibrahim Alzamil
-##Abdulmalik Abdullah Alabdulwahab
-##Raed AbdulRahman AlWaili
+Abdullah Rajeh Alshehri
+Ziyad Abdulaziz Almoneef
+Salman Ibrahim Alzamil
+Abdulmalik Abdullah Alabdulwahab
+Raed AbdulRahman AlWaili
 
